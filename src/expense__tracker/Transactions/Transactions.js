@@ -8,7 +8,7 @@ import { Ebg1 } from "../../../assets/images";
 import theme, { Box, Text } from "../../components/theme";
 import { Chart, AddIcon, Delete } from "../Svgs";
 
-export const moneySign = "₦";
+export const moneySign = "₹";
 
 /* Add Transaction Component */
 import Expense from "./Expense";
@@ -64,7 +64,7 @@ const Transactions = ({ navigation }) => {
     const sum = eval(prices.join("+"));
 
     return (
-      <Text color="silver1">{sum > 0 ? `₦${sum}` : `- ₦${Math.abs(sum)}`}</Text>
+      <Text color="silver1">{sum > 0 ? `₹${sum}` : `- ₹${Math.abs(sum)}`}</Text>
     );
   };
 

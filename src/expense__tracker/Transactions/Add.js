@@ -79,7 +79,7 @@ const Add = ({ navigation }) => {
           marginTop="m"
         >
           <Text variant="title" color="primary">
-            ₦
+            ₹
           </Text>
 
           <TextInput
@@ -99,7 +99,7 @@ const Add = ({ navigation }) => {
           />
 
           <Text variant="title" color="primary" style={{ fontSize: 20 }}>
-            NGN
+            INR
           </Text>
         </Box>
 

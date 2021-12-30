@@ -58,8 +58,8 @@ const Expense = ({ index, transition, onTap, onDelete, item, allDates }) => {
                   }}
                 >
                   {item.price > 0
-                    ? `₦${item.price}`
-                    : `- ₦${Math.abs(item.price)}`}
+                    ? `₹${item.price}`
+                    : `- ₹${Math.abs(item.price)}`}
                 </Animated.Text>
               </Animated.View>
             </View>

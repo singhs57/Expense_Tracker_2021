@@ -13,7 +13,7 @@ const Onboarding = ({ navigation }) => {
   useEffect(() => {
     setTimeout(() => {
       navigation.navigate("Transactions");
-    }, 3000);
+    }, 10000);
   }, []);
 
   return (

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Box, Text } from "../../components/theme";
 import { Chart } from "../Svgs";
+import MonthSelecter from "../Svgs/MonthSelecter";
 
 const Top = () => {
   const dispatch = useDispatch();
@@ -20,9 +21,10 @@ const Top = () => {
   return (
     <Box paddingLeft="l" paddingRight="l" style={{ paddingTop: 40 }}>
       <Box flexDirection="row" justifyContent="space-between">
-        <Text variant="title" style={{ fontSize: 30, fontFamily: "RMedium" }}>
+        {/* <Text variant="title" style={{ fontSize: 30, fontFamily: "RMedium" }}>
           November
-        </Text>
+        </Text> */}
+        <MonthSelecter />
         <Chart />
       </Box>
       <Box flexDirection="row" justifyContent="space-between" marginTop="m">
@@ -43,7 +45,7 @@ const Top = () => {
             color="green"
             fontWeight="700"
           >
-            ₦{income}
+            ₹{income}
           </Text>
         </Box>
         <Box>
@@ -63,7 +65,7 @@ const Top = () => {
             fontWeight="700"
             fontFamily="SFBOLD"
           >
-            -₦{expense}
+            -₹{expense}
           </Text>
         </Box>
         <Box>
@@ -82,7 +84,7 @@ const Top = () => {
             fontSize={13}
             color="brown"
           >
-            ₦{balance}
+            ₹{balance}
           </Text>
         </Box>
       </Box>
