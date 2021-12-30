@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Box, Text } from "../../components/theme";
 import { Chart } from "../Svgs";
-import MonthSelecter from "../Svgs/MonthSelecter";
+import MonthSelector from "../Svgs/MonthSelecter";
 
 const Top = () => {
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ const Top = () => {
         {/* <Text variant="title" style={{ fontSize: 30, fontFamily: "RMedium" }}>
           November
         </Text> */}
-        <MonthSelecter />
+        <MonthSelector />
         <Chart />
       </Box>
       <Box flexDirection="row" justifyContent="space-between" marginTop="m">

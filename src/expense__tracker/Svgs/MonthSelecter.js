@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
 import { Picker } from "@react-native-picker/picker";
+import { theme } from "../../components";
 
-function MonthSelecter() {
+function MonthSelector() {
   const [selectedValue, setSelectedValue] = useState(monthsLabel);
   const monthsLabel = [
     { mon_labels: "January", value: "1" },
@@ -27,7 +28,6 @@ function MonthSelecter() {
         onValueChange={(value, index) => setSelectedValue(value)}
         mode="dropdown" // Android only
         style={styles.picker}
-        itemTextStyle={{ fontSize: 30, color: "#d00" }}
       >
         {monthsLabel.map((item, index) => {
           return (
@@ -43,19 +43,23 @@ function MonthSelecter() {
   );
 }
 
-export default MonthSelecter;
+export default MonthSelector;
 
 // Just some styles
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
     justifyContent: "center",
+    borderWidth: 1,
+    borderRadius: 30,
+    maxWidth: 200,
+    borderColor: theme.colors.silver1,
+    marginTop: 10,
   },
   picker: {
     marginVertical: 10,
-    height: 50,
-    width: 200,
+    height: 30,
+    minWidth: 190,
     padding: 10,
-    borderWidth: 1,
   },
 });

@@ -5,9 +5,10 @@ import Svg, { Path, G, Rect } from "react-native-svg";
 export default ({}) => {
   return (
     <Svg
-      width={moderateScale(23)}
-      height={moderateScale(23)}
+      width={moderateScale(30)}
+      height={moderateScale(30)}
       viewBox="0 0 24.5 24.478"
+      style={{ marginTop: 10 }}
     >
       <G
         data-name="Chart view"
